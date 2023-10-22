@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+import sys
+argv = sys.argv[1]
+file1 = open(argv, 'r')
+lines = file1.readlines()
+for line in lines:
+    num = int(line)
+    for i in range (2, 10):
+        div = int (num / i)
+        if (num % i == 0):
+            print ('{} = {} * {}'.format(num, i, div))
+
+
+
